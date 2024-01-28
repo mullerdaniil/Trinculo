@@ -1,0 +1,24 @@
+{
+  "isCaseSensitive": false,
+  "emptyGlyphWidth": 5,
+  "encodedGlyphs": [
+    {
+      "character": "a",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|xxxxx|x...x|x...x"
+    },
+    {
+      "character": "b",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|xxxx.|x...x|xxxxx"
+    },
+    {
+      "character" : "c",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x....|x....|x....|xxxxx"
+    }
+  ]
+}
