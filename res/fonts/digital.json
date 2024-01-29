@@ -1,0 +1,90 @@
+{
+  "isCaseSensitive": false,
+  "emptyGlyphWidth": 5,
+  "encodedGlyphs": [
+    {
+      "character": "0",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|x.x|x.x|x.x|xxx"
+    },
+    {
+      "character": "1",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": ".x.|xx.|.x.|.x.|xxx"
+    },
+    {
+      "character": "2",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|..x|xxx|x..|xxx"
+    },
+    {
+      "character": "3",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|..x|xxx|..x|xxx"
+    },
+    {
+      "character": "4",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "x.x|x.x|xxx|..x|..x"
+    },
+    {
+      "character": "5",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|x..|xxx|..x|xxx"
+    },
+    {
+      "character": "6",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|x..|xxx|x.x|xxx"
+    },
+    {
+      "character": "7",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|..x|..x|..x|..x"
+    },
+    {
+      "character": "8",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|x.x|xxx|x.x|xxx"
+    },
+    {
+      "character": "9",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "xxx|x.x|xxx|..x|xxx"
+    },
+    {
+      "character": "-",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "...|...|xxx|...|..."
+    },
+    {
+      "character": "+",
+      "height": 5,
+      "width": 3,
+      "encodedGlyphString": "...|.x.|xxx|.x.|..."
+    },
+    {
+      "character": ".",
+      "height": 5,
+      "width": 1,
+      "encodedGlyphString": ".|.|.|.|x"
+    },
+    {
+      "character": ":",
+      "height": 5,
+      "width": 1,
+      "encodedGlyphString": ".|x|.|x|."
+    }
+  ]
+}
