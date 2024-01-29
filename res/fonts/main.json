@@ -19,6 +19,300 @@
       "height": 5,
       "width": 5,
       "encodedGlyphString": "xxxxx|x....|x....|x....|xxxxx"
+    },
+    {
+      "character": "d",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxx.|x...x|x...x|x...x|xxxx."
+    },
+    {
+      "character": "e",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x....|xxxxx|x....|xxxxx"
+    },
+    {
+      "character": "f",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x....|xxx..|x....|x...."
+    },
+    {
+      "character": "g",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x....|x.xxx|x...x|xxxxx"
+    },
+    {
+      "character": "h",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|xxxxx|x...x|x...x"
+    },
+    {
+      "character": "i",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|..x..|..x..|..x..|xxxxx"
+    },
+    {
+      "character": "j",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|..x..|..x..|..x..|xxx.."
+    },
+    {
+      "character": "k",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x..x.|xxx..|x..x.|x...x"
+    },
+    {
+      "character": "l",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x....|x....|x....|x....|xxxxx"
+    },
+    {
+      "character": "m",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|xx.xx|x.x.x|x...x|x...x"
+    },
+    {
+      "character": "n",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|xx..x|x.x.x|x..xx|x...x"
+    },
+    {
+      "character": "o",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".xxx.|x...x|x...x|x...x|.xxx."
+    },
+    {
+      "character": "p",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|xxxxx|x....|x...."
+    },
+    {
+      "character": "q",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|x...x|x..x.|xxx.x"
+    },
+    {
+      "character": "r",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxx.|x...x|xxxx.|x...x|x...x"
+    },
+    {
+      "character": "s",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".xxxx|x....|xxxxx|....x|xxxx."
+    },
+    {
+      "character": "t",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|..x..|..x..|..x..|..x.."
+    },
+    {
+      "character": "u",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|x...x|x...x|xxxxx"
+    },
+    {
+      "character": "v",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|.x.x.|.x.x.|..x.."
+    },
+    {
+      "character": "w",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|x.x.x|x.x.x|.x.x."
+    },
+    {
+      "character": "x",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|.xxx.|x...x|x...x"
+    },
+    {
+      "character": "y",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|xxxxx|....x|xxxxx"
+    },
+    {
+      "character": "z",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|....x|.xxx.|x....|xxxxx"
+    },
+    {
+      "character": "0",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|x...x|x...x|xxxxx"
+    },
+    {
+      "character": "1",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "..x..|xxx..|..x..|..x..|xxxxx"
+    },
+    {
+      "character": "2",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|....x|xxxxx|x....|xxxxx"
+    },
+    {
+      "character": "3",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|....x|xxxxx|....x|xxxxx"
+    },
+    {
+      "character": "4",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x...x|x...x|xxxxx|....x|....x"
+    },
+    {
+      "character": "5",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x....|xxxxx|....x|xxxxx"
+    },
+    {
+      "character": "6",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x....|xxxxx|x...x|xxxxx"
+    },
+    {
+      "character": "7",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|....x|....x|....x|....x"
+    },
+    {
+      "character": "8",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|xxxxx|x...x|xxxxx"
+    },
+    {
+      "character": "9",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|x...x|xxxxx|....x|xxxxx"
+    },
+    {
+      "character": "-",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".....|.....|xxxxx|.....|....."
+    },
+    {
+      "character": "{",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "..xx.|..x..|.x...|..x..|..xx."
+    },
+    {
+      "character": "}",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".xx..|..x..|...x.|..x..|.xx.."
+    },
+    {
+      "character": ".",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".....|.....|.....|.....|..x.."
+    },
+    {
+      "character": "/",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "....x|...x.|..x..|.x...|x...."
+    },
+    {
+      "character": "\\",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "x....|.x...|..x..|...x.|....x"
+    },
+    {
+      "character": "!",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "..x..|..x..|..x..|.....|..x.."
+    },
+    {
+      "character": "(",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "..x..|.x...|.x...|.x...|..x.."
+    },
+    {
+      "character": ")",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "..x..|...x.|...x.|...x.|..x.."
+    },
+    {
+      "character": "[",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "..xx.|..x..|..x..|..x..|..xx."
+    },
+    {
+      "character": "]",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".xx..|..x..|..x..|..x..|.xx.."
+    },
+    {
+      "character": ":",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".....|..x..|.....|..x..|....."
+    },
+    {
+      "character": "#",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".x.x.|xxxxx|.x.x.|xxxxx|.x.x."
+    },
+    {
+      "character": "_",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".....|.....|.....|.....|xxxxx"
+    },
+    {
+      "character": "?",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": "xxxxx|....x|..xxx|.....|..x.."
+    },
+    {
+      "character": ";",
+      "height": 5,
+      "width": 5,
+      "encodedGlyphString": ".....|..x..|.....|..x..|..x.."
     }
   ]
 }
