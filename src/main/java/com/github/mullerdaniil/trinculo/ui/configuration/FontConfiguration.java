@@ -14,6 +14,10 @@ public class FontConfiguration {
     private final FontLoader fontLoader;
     @Bean
     public Font mainFont() {
+        return fontLoader.loadFont(FONTS_DIRECTORY_PATH.resolve("main.json"));
+    }
+    @Bean
+    public Font digitalFont() {
         return fontLoader.loadFont(FONTS_DIRECTORY_PATH.resolve("digital.json"));
     }
 }
