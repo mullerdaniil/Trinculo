@@ -3,7 +3,7 @@ package com.github.mullerdaniil.trinculo.ui.utils;
 import java.util.Set;
 
 public class Constants {
-    public static final String WINDOW_NAME = "OBERON";
+    public static final String WINDOW_NAME = "TRINCULO";
     public static final int WINDOW_WIDTH_RPX = 160;
     public static final int WINDOW_HEIGHT_RPX = 120;
     public static final int WINDOW_WIDTH_MARGIN_PX = 16;

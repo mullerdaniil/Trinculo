@@ -11,8 +11,10 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Data
 public class Track {
-    private String id;
     private String name;
+
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "uuuu-MM-dd'T'HH:mm:ss.SSS")
     private LocalDateTime creationTime;
+
+    private LocalDateTime deadline;
 }
