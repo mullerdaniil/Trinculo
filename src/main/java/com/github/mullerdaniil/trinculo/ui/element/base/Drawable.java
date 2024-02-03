@@ -1,4 +1,4 @@
-package com.github.mullerdaniil.trinculo.ui.element;
+package com.github.mullerdaniil.trinculo.ui.element.base;
 
 import java.awt.*;
 

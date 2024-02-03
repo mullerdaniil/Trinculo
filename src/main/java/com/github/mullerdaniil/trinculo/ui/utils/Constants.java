@@ -9,6 +9,10 @@ public class Constants {
     public static final int WINDOW_WIDTH_MARGIN_PX = 16;
     public static final int WINDOW_HEIGHT_MARGIN_PX = 38;
     public static final int TIMER_DELAY = 10;
+    public static final int SCALE = 6;
     public static final Set<Character> ENCODED_GLYPH_NON_ACTIVE_CHAR_SET = Set.of(' ', '.');
     public static final Set<Character> ENCODED_GLYPH_SKIPPED_CHAR_SET = Set.of('|');
+    public static final int COLOR_COMPONENT_MIN_VALUE = 0;
+    public static final int COLOR_COMPONENT_MAX_VALUE = 255;
+    public static final long ANIMATION_DURATION = 50;
 }

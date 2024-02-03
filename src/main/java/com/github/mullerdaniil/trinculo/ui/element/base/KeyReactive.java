@@ -1,4 +1,4 @@
-package com.github.mullerdaniil.trinculo.ui.element;
+package com.github.mullerdaniil.trinculo.ui.element.base;
 
 public interface KeyReactive {
     void onKeyPressed(int keyCode);

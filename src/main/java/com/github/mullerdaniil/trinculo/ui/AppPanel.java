@@ -1,12 +1,14 @@
 package com.github.mullerdaniil.trinculo.ui;
 
 import com.github.mullerdaniil.trinculo.engine.DataInitializer;
+import com.github.mullerdaniil.trinculo.ui.animation.base.AnimationContext;
 import com.github.mullerdaniil.trinculo.ui.color.ColorScheme;
-import com.github.mullerdaniil.trinculo.ui.element.ElementContext;
-import com.github.mullerdaniil.trinculo.ui.font.Font;
-import com.github.mullerdaniil.trinculo.ui.graphics.FontDrawer;
+import com.github.mullerdaniil.trinculo.ui.element.TextDisplay;
+import com.github.mullerdaniil.trinculo.ui.element.TextLabel;
+import com.github.mullerdaniil.trinculo.ui.element.base.ElementContext;
 import com.github.mullerdaniil.trinculo.ui.graphics.Scaler;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.*;
@@ -22,9 +24,8 @@ public class AppPanel extends JPanel {
     private final Scaler scaler;
     private final ColorScheme colorScheme;
     private final DataInitializer dataInitializer;
-
-    private final FontDrawer fontDrawer;
-    private final Font mainFont;
+    private final AnimationContext animationContext;
+    private final TextLabel applicationNameLabel;
 
     public void run() {
         dataInitializer.initializeData();
@@ -35,23 +36,30 @@ public class AppPanel extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-
-        // TODO: impl
-        fontDrawer.drawString("abcdefghijklmnopqrstuvwxyz", mainFont, 0, 0, Color.GREEN, g);
+        elementContext.draw(g);
     }
 
     private class TimerListener implements ActionListener {
         @Override
         public void actionPerformed(ActionEvent e) {
+            animationContext.update();
             repaint();
         }
     }
+
+    @Autowired
+    private TextDisplay weatherDisplay;
 
     private class KeyListener extends KeyAdapter {
         @Override
         public void keyPressed(KeyEvent e) {
             int keyCode = e.getKeyCode();
             elementContext.onKeyPressed(keyCode);
+
+            // TODO: delete
+            if (keyCode == KeyEvent.VK_SPACE) {
+                weatherDisplay.setText("544");
+            }
         }
 
         @Override

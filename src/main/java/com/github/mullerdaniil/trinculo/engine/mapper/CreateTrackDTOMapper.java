@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class CreateTrackDTOMapper implements Mapper<CreateTrackDTO, Track> {
     @Override
-    public Track map(CreateTrackDTO object) {
+    public Track map(CreateTrackDTO createTrackDTO) {
         return null;
     }
 }
