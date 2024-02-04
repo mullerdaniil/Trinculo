@@ -12,7 +12,7 @@ import java.util.List;
 public class AnimationContext {
     private final List<Animation> animations = new ArrayList<>();
 
-    public void update() {
+    public synchronized void update() {
         for (var animation : animations) {
             if (animation.isAlive()) {
                 animation.update();
@@ -25,7 +25,7 @@ public class AnimationContext {
     }
 
     @Scheduled(fixedRate = 3000)
-    private void clearDeadAnimations() {
+    private synchronized void clearDeadAnimations() {
         animations.removeIf(animation -> !animation.isAlive());
     }
 }

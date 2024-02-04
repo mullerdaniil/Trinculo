@@ -3,8 +3,7 @@ package com.github.mullerdaniil.trinculo.ui;
 import com.github.mullerdaniil.trinculo.engine.DataInitializer;
 import com.github.mullerdaniil.trinculo.ui.animation.base.AnimationContext;
 import com.github.mullerdaniil.trinculo.ui.color.ColorScheme;
-import com.github.mullerdaniil.trinculo.ui.element.TextDisplay;
-import com.github.mullerdaniil.trinculo.ui.element.TextLabel;
+import com.github.mullerdaniil.trinculo.ui.element.base.TextDisplay;
 import com.github.mullerdaniil.trinculo.ui.element.base.ElementContext;
 import com.github.mullerdaniil.trinculo.ui.graphics.Scaler;
 import lombok.RequiredArgsConstructor;
@@ -25,7 +24,6 @@ public class AppPanel extends JPanel {
     private final ColorScheme colorScheme;
     private final DataInitializer dataInitializer;
     private final AnimationContext animationContext;
-    private final TextLabel applicationNameLabel;
 
     public void run() {
         dataInitializer.initializeData();
@@ -47,19 +45,11 @@ public class AppPanel extends JPanel {
         }
     }
 
-    @Autowired
-    private TextDisplay weatherDisplay;
-
     private class KeyListener extends KeyAdapter {
         @Override
         public void keyPressed(KeyEvent e) {
             int keyCode = e.getKeyCode();
             elementContext.onKeyPressed(keyCode);
-
-            // TODO: delete
-            if (keyCode == KeyEvent.VK_SPACE) {
-                weatherDisplay.setText("544");
-            }
         }
 
         @Override

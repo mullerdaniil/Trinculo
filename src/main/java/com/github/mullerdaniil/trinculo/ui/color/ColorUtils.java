@@ -20,7 +20,9 @@ public class ColorUtils {
         return new Color(red, green, blue);
     }
 
-    private static int transformComponent(int colorFromComponentValue, int colorToComponentValue, double degree) {
+    private static int transformComponent(int colorFromComponentValue,
+                                          int colorToComponentValue,
+                                          double degree) {
         int newComponentValue = (int) (colorFromComponentValue + (double) (colorToComponentValue - colorFromComponentValue) * degree);
         if (newComponentValue < COLOR_COMPONENT_MIN_VALUE) {
             return COLOR_COMPONENT_MIN_VALUE;

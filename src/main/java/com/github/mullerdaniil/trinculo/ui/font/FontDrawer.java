@@ -1,7 +1,8 @@
-package com.github.mullerdaniil.trinculo.ui.graphics;
+package com.github.mullerdaniil.trinculo.ui.font;
 
 import com.github.mullerdaniil.trinculo.ui.font.Font;
 import com.github.mullerdaniil.trinculo.ui.font.Glyph;
+import com.github.mullerdaniil.trinculo.ui.graphics.Scaler;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 

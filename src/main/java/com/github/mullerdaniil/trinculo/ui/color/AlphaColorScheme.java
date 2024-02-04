@@ -20,11 +20,11 @@ public class AlphaColorScheme implements ColorScheme {
 
     @Override
     public Color getTextLabelTextColor() {
-        return new Color(160, 0, 0);
+        return new Color(192, 0, 0);
     }
 
     @Override
     public Color getTextLabelTextFlashColor() {
-        return new Color(255, 0, 0);
+        return new Color(255, 64, 64);
     }
 }

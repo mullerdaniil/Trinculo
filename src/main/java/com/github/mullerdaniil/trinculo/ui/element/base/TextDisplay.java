@@ -1,13 +1,12 @@
-package com.github.mullerdaniil.trinculo.ui.element;
+package com.github.mullerdaniil.trinculo.ui.element.base;
 
 import com.github.mullerdaniil.trinculo.ui.animation.TextDisplaySetTextAnimation;
 import com.github.mullerdaniil.trinculo.ui.animation.base.AnimationContext;
 import com.github.mullerdaniil.trinculo.ui.color.ColorScheme;
-import com.github.mullerdaniil.trinculo.ui.element.base.Element;
 import com.github.mullerdaniil.trinculo.ui.font.Font;
-import com.github.mullerdaniil.trinculo.ui.graphics.FontDrawer;
+import com.github.mullerdaniil.trinculo.ui.font.FontDrawer;
+import com.github.mullerdaniil.trinculo.ui.font.FontDrawingContext;
 import com.github.mullerdaniil.trinculo.ui.graphics.Location;
-import com.github.mullerdaniil.trinculo.ui.graphics.Scaler;
 import com.github.mullerdaniil.trinculo.ui.graphics.Size;
 import lombok.Getter;
 import lombok.Setter;
@@ -33,19 +32,17 @@ public class TextDisplay extends Element {
 
     private String text = "";
 
-    public TextDisplay(Scaler scaler,
+    public TextDisplay(FontDrawingContext fontDrawingContext,
                        Location location,
                        AnimationContext animationContext,
-                       FontDrawer fontDrawer,
-                       ColorScheme colorScheme,
                        Font font,
                        Size size,
                        Color textColor,
                        Color backgroundColor) {
-        super(scaler, location);
+        super(fontDrawingContext.getScaler(), location);
         this.animationContext = animationContext;
-        this.fontDrawer = fontDrawer;
-        this.colorScheme = colorScheme;
+        this.fontDrawer = fontDrawingContext.getFontDrawer();
+        this.colorScheme = fontDrawingContext.getColorScheme();
         this.font = font;
         this.size = size;
         this.textColor = textColor;

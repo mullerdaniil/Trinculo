@@ -1,8 +1,7 @@
-package com.github.mullerdaniil.trinculo.ui.element;
+package com.github.mullerdaniil.trinculo.ui.element.base;
 
-import com.github.mullerdaniil.trinculo.ui.element.base.Element;
 import com.github.mullerdaniil.trinculo.ui.font.Font;
-import com.github.mullerdaniil.trinculo.ui.graphics.FontDrawer;
+import com.github.mullerdaniil.trinculo.ui.font.FontDrawer;
 import com.github.mullerdaniil.trinculo.ui.graphics.Location;
 import com.github.mullerdaniil.trinculo.ui.graphics.Scaler;
 import lombok.Getter;

@@ -2,8 +2,7 @@ package com.github.mullerdaniil.trinculo.ui.animation;
 
 import com.github.mullerdaniil.trinculo.ui.animation.base.Animation;
 import com.github.mullerdaniil.trinculo.ui.color.ColorScheme;
-import com.github.mullerdaniil.trinculo.ui.element.TextDisplay;
-import com.github.mullerdaniil.trinculo.ui.element.TextLabel;
+import com.github.mullerdaniil.trinculo.ui.element.base.TextDisplay;
 import lombok.RequiredArgsConstructor;
 
 import static com.github.mullerdaniil.trinculo.ui.color.ColorUtils.transformColor;
