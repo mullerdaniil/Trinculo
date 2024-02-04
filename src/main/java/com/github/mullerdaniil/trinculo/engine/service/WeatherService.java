@@ -29,6 +29,7 @@ public class WeatherService {
 
             return result;
         } catch (Exception e) {
+            e.printStackTrace();
             return "xxx";
         }
     }

@@ -14,5 +14,7 @@ public class Constants {
     public static final Set<Character> ENCODED_GLYPH_SKIPPED_CHAR_SET = Set.of('|');
     public static final int COLOR_COMPONENT_MIN_VALUE = 0;
     public static final int COLOR_COMPONENT_MAX_VALUE = 255;
-    public static final long ANIMATION_DURATION = 50;
+    public static final long ANIMATION_DURATION = 40;
+    public static final int FULL_WINDOW_DISPLAY_SYMBOLS_COUNT_LIMIT = 25;
+    public static final int DISPLAY_SYMBOL_DISTANCE = 6;
 }

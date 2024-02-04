@@ -15,6 +15,7 @@ import java.awt.*;
 
 import static com.github.mullerdaniil.trinculo.ui.utils.Constants.ANIMATION_DURATION;
 
+@Getter
 public class TextDisplay extends Element {
     private final AnimationContext animationContext;
     private final FontDrawer fontDrawer;
@@ -22,11 +23,9 @@ public class TextDisplay extends Element {
     private final Font font;
     private final Size size;
 
-    @Getter
     @Setter
     private Color textColor;
 
-    @Getter
     @Setter
     private Color backgroundColor;
 

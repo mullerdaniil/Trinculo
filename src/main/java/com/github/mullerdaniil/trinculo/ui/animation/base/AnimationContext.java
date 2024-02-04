@@ -25,7 +25,7 @@ public class AnimationContext {
     }
 
     @Scheduled(fixedRate = 5_000)
-    private synchronized void clearDeadAnimations() {
+    public synchronized void clearDeadAnimations() {
         animations.removeIf(animation -> !animation.isAlive());
     }
 }

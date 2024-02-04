@@ -8,4 +8,7 @@ public interface ColorScheme {
     Color getTextLabelBackgroundColor();
     Color getTextLabelTextColor();
     Color getTextLabelTextFlashColor();
+    Color getEnabledLineStartIndicatorColor();
+    Color getDisabledLineStartIndicatorColor();
+    Color getDisplayCursorColor();
 }
