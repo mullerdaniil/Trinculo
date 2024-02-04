@@ -20,11 +20,11 @@ public class AnimationContext {
         }
     }
 
-    public void launch(Animation animation) {
+    public synchronized void launch(Animation animation) {
         animations.add(animation);
     }
 
-    @Scheduled(fixedRate = 3000)
+    @Scheduled(fixedRate = 5_000)
     private synchronized void clearDeadAnimations() {
         animations.removeIf(animation -> !animation.isAlive());
     }
