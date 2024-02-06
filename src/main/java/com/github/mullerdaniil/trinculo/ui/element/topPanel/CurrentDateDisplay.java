@@ -4,7 +4,6 @@ import com.github.mullerdaniil.trinculo.ui.animation.base.AnimationContext;
 import com.github.mullerdaniil.trinculo.ui.element.base.TextDisplay;
 import com.github.mullerdaniil.trinculo.ui.font.Font;
 import com.github.mullerdaniil.trinculo.ui.font.FontDrawingContext;
-import com.github.mullerdaniil.trinculo.ui.utils.ConversionUtils;
 import jakarta.annotation.PostConstruct;
 import org.springframework.stereotype.Component;
 
@@ -24,9 +23,7 @@ public class CurrentDateDisplay extends TextDisplay {
                 CURRENT_DATE_DISPLAY_LOCATION,
                 animationContext,
                 digitalFont,
-                CURRENT_DATE_DISPLAY_SIZE,
-                fontDrawingContext.getColorScheme().getTextLabelTextColor(),
-                fontDrawingContext.getColorScheme().getTextLabelBackgroundColor()
+                CURRENT_DATE_DISPLAY_SIZE
         );
     }
 

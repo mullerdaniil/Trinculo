@@ -1,5 +1,6 @@
 package com.github.mullerdaniil.trinculo.ui.animation.function;
 
+@Deprecated
 public class EaseOutElasticFunction implements Function {
     private static final double C4 = (2 * Math.PI) / 3;
 

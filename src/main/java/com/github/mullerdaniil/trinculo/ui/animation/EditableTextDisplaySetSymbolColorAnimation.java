@@ -1,6 +1,8 @@
 package com.github.mullerdaniil.trinculo.ui.animation;
 
 import com.github.mullerdaniil.trinculo.ui.animation.base.Animation;
+import com.github.mullerdaniil.trinculo.ui.animation.function.Function;
+import com.github.mullerdaniil.trinculo.ui.animation.function.Functions;
 import com.github.mullerdaniil.trinculo.ui.color.ColorScheme;
 import com.github.mullerdaniil.trinculo.ui.element.base.EditableTextDisplay;
 import lombok.RequiredArgsConstructor;
@@ -22,7 +24,7 @@ public class EditableTextDisplaySetSymbolColorAnimation extends Animation {
             return;
         }
 
-        boolean isAscending = elapsedTicks <= duration / 2.0;
+/*        boolean isAscending = elapsedTicks <= duration / 2.0;
         double degree;
         if (isAscending) {
             degree = elapsedTicks / (duration / 2.0);
@@ -30,6 +32,13 @@ public class EditableTextDisplaySetSymbolColorAnimation extends Animation {
             degree = (duration - elapsedTicks) / (duration / 2.0);
         }
         editableTextDisplay.setSymbolColor(transformColor(colorScheme.getTextLabelTextColor(), colorScheme.getTextLabelTextFlashColor(), degree), position);
+        */
+
+        double degree = Functions.linearHalves((double) elapsedTicks / duration);
+        editableTextDisplay.setSymbolColor(transformColor(
+                colorScheme.getTextLabelTextColor(), colorScheme.getTextLabelTextFlashColor(), degree
+        ), position);
+
         elapsedTicks++;
     }
 }

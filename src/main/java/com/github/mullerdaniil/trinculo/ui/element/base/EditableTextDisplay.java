@@ -34,19 +34,15 @@ public class EditableTextDisplay extends TextDisplay {
                                AnimationContext animationContext,
                                Font font,
                                Size size,
-                               Color textColor,
-                               Color backgroundColor,
-                               Color enabledLineStartIndicatorColor,
-                               Color disabledLineStartIndicatorColor,
                                int symbolsCountLimit) {
-        super(fontDrawingContext, location, animationContext, font, size, textColor, backgroundColor);
-        this.enabledLineStartIndicatorColor = enabledLineStartIndicatorColor;
-        this.disabledLineStartIndicatorColor = disabledLineStartIndicatorColor;
+        super(fontDrawingContext, location, animationContext, font, size);
+        enabledLineStartIndicatorColor = fontDrawingContext.getColorScheme().getEnabledLineStartIndicatorColor();
+        disabledLineStartIndicatorColor = fontDrawingContext.getColorScheme().getDisabledLineStartIndicatorColor();
         this.symbolsCountLimit = symbolsCountLimit;
         indicatorColor = enabledLineStartIndicatorColor;
         symbolColors = new Color[symbolsCountLimit];
         for (int i = 0; i < symbolsCountLimit; i++) {
-            symbolColors[i] = textColor;
+            symbolColors[i] = getTextColor();
         }
     }
 
@@ -54,13 +50,9 @@ public class EditableTextDisplay extends TextDisplay {
     public void draw(Graphics g) {
         scaler.drawRectangle(location.x(), location.y(), 1, getSize().height(), indicatorColor, g);
         scaler.drawRectangle(location.x() + 1, location.y(), getSize().width() - 1, getSize().height(), getBackgroundColor(), g);
-
-//        getFontDrawer().drawString(partialText, getFont(), location.x() + 2, location.y() + 1, getTextColor(), g);
         for (int i = 0; i < partialText.length(); i++) {
             getFontDrawer().drawString(String.valueOf(partialText.charAt(i)), getFont(), location.x() + 2 + DISPLAY_SYMBOL_DISTANCE * i, location.y() + 1, symbolColors[i], g);
         }
-
-        // TODO: remove constant
         if (isCursorEnabled) {
             scaler.drawRectangle(location.x() + 1 + (cursorPosition - leftSymbolPosition) * DISPLAY_SYMBOL_DISTANCE, location.y() + 1, 1, getSize().height() - 2, getColorScheme().getDisplayCursorColor(), g);
         }

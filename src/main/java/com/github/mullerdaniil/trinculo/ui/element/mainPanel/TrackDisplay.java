@@ -21,10 +21,6 @@ public class TrackDisplay extends EditableTextDisplay {
                 animationContext,
                 mainFont,
                 TRACK_DISPLAY_SIZE,
-                fontDrawingContext.getColorScheme().getTextLabelTextColor(),
-                fontDrawingContext.getColorScheme().getTextLabelBackgroundColor(),
-                fontDrawingContext.getColorScheme().getEnabledLineStartIndicatorColor(),
-                fontDrawingContext.getColorScheme().getDisabledLineStartIndicatorColor(),
                 FULL_WINDOW_DISPLAY_SYMBOLS_COUNT_LIMIT
         );
     }

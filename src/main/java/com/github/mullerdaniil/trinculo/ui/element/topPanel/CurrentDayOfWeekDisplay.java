@@ -23,9 +23,7 @@ public class CurrentDayOfWeekDisplay extends TextDisplay {
                 CURRENT_DAY_OF_WEEK_DISPLAY_LOCATION,
                 animationContext,
                 mainFont,
-                CURRENT_DAY_OF_WEEK_DISPLAY_SIZE,
-                fontDrawingContext.getColorScheme().getTextLabelTextColor(),
-                fontDrawingContext.getColorScheme().getTextLabelBackgroundColor()
+                CURRENT_DAY_OF_WEEK_DISPLAY_SIZE
         );
     }
 

@@ -35,17 +35,15 @@ public class TextDisplay extends Element {
                        Location location,
                        AnimationContext animationContext,
                        Font font,
-                       Size size,
-                       Color textColor,
-                       Color backgroundColor) {
+                       Size size) {
         super(fontDrawingContext.getScaler(), location);
         this.animationContext = animationContext;
         this.fontDrawer = fontDrawingContext.getFontDrawer();
         this.colorScheme = fontDrawingContext.getColorScheme();
         this.font = font;
         this.size = size;
-        this.textColor = textColor;
-        this.backgroundColor = backgroundColor;
+        this.textColor = fontDrawingContext.getColorScheme().getTextLabelTextColor();
+        this.backgroundColor = fontDrawingContext.getColorScheme().getTextLabelBackgroundColor();
     }
 
     @Override

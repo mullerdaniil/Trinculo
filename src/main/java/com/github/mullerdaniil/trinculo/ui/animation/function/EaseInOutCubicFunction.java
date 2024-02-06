@@ -1,5 +1,6 @@
 package com.github.mullerdaniil.trinculo.ui.animation.function;
 
+@Deprecated
 public class EaseInOutCubicFunction implements Function {
     @Override
     public double evaluate(double x) {

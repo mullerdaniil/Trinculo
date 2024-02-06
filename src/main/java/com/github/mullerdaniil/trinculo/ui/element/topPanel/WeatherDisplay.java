@@ -24,9 +24,7 @@ public class WeatherDisplay extends TextDisplay {
                 WEATHER_DISPLAY_LOCATION,
                 animationContext,
                 digitalFont,
-                WEATHER_DISPLAY_SIZE,
-                fontDrawingContext.getColorScheme().getTextLabelTextColor(),
-                fontDrawingContext.getColorScheme().getTextLabelBackgroundColor()
+                WEATHER_DISPLAY_SIZE
         );
         this.weatherService = weatherService;
     }

@@ -23,9 +23,7 @@ public class CurrentTimeDisplay extends TextDisplay {
                 CURRENT_TIME_DISPLAY_LOCATION,
                 animationContext,
                 digitalFont,
-                CURRENT_TIME_DISPLAY_SIZE,
-                fontDrawingContext.getColorScheme().getTextLabelTextColor(),
-                fontDrawingContext.getColorScheme().getTextLabelBackgroundColor()
+                CURRENT_TIME_DISPLAY_SIZE
         );
     }
 
