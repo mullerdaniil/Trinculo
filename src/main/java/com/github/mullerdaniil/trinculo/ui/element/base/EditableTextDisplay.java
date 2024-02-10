@@ -82,7 +82,7 @@ public class EditableTextDisplay extends TextDisplay {
     }
 
     public void setSymbolColor(Color color, int position) {
-        if (position < symbolsCountLimit) {
+        if (position >= 0 && position < symbolsCountLimit) {
             symbolColors[position] = color;
         }
     }
@@ -90,6 +90,10 @@ public class EditableTextDisplay extends TextDisplay {
     private void insertSymbol(char symbol) {
         fullText = fullText.substring(0, cursorPosition) + symbol + fullText.substring(cursorPosition);
         cursorPosition++;
+        // TODO: impl
+        if (fullText.length() > leftSymbolPosition + symbolsCountLimit) {
+            leftSymbolPosition++;
+        }
         updatePartialText();
         getAnimationContext().launch(new EditableTextDisplaySetSymbolColorAnimation(
                 this,
@@ -103,22 +107,38 @@ public class EditableTextDisplay extends TextDisplay {
         if (fullText.length() > 0) {
             fullText = fullText.substring(0, cursorPosition - 1) + fullText.substring(cursorPosition);
             cursorPosition--;
+            // TODO: impl
             updatePartialText();
         }
     }
 
     private void moveCursorLeft() {
         cursorPosition = Math.max(cursorPosition - 1, 0);
+        // TODO: impl
+        updatePartialText();
     }
 
     private void moveCursorRight() {
         cursorPosition = Math.min(cursorPosition + 1, fullText.length());
+        // TODO: impl
+        updatePartialText();
     }
 
     private void updatePartialText() {
+//        if (cursorPosition < leftSymbolPosition) {
+/*
         if (cursorPosition == fullText.length()) {
             leftSymbolPosition = fullText.length() - Math.min(fullText.length(), FULL_WINDOW_DISPLAY_SYMBOLS_COUNT_LIMIT);
         }
+        if (cursorPosition < leftSymbolPosition) {
+            leftSymbolPosition = cursorPosition;
+        }
+        if (cursorPosition >= leftSymbolPosition + symbolsCountLimit) {
+            leftSymbolPosition = cursorPosition - symbolsCountLimit;
+        }
+
+*/
+
         partialText = fullText.substring(leftSymbolPosition, Math.min(leftSymbolPosition + symbolsCountLimit, fullText.length()));
         updateIndicator();
     }
